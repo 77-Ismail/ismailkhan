@@ -1,96 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="profile">
+                <img src="DP_8.png" alt="Profile Picture">
+            </div>
+            <div class="intro">
+                <p>HELLO EVERYBODY, I AM</p>
+                <h1>Ismail Khan</h1>
+                <h2>Associate Data Engineer</h2>
+                <p>Passionate Associate Data Engineer with a focus on designing, building, and managing data systems to
+                    drive insightful analysis and innovation.</p>
+                <ul class="contact-info">
+                    <li><i class="fas fa-calendar-alt"></i> 03rd June, 2002</li>
+                    <li><i class="fas fa-phone"></i> +92 320-5709129 </li>
+                    <li><i class="fas fa-envelope"></i> ismaailkhan2020@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</li>
+                </ul>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h1>ABOUT MYSELF</h1>
+                <p>
+                    Passionate Associate Data Engineer with a focus on designing, building, and managing data systems to
+                    drive
+                    insightful analysis and innovation. Skilled in SQL, Python, and data visualization tools. Committed
+                    to
+                    continuous learning and staying updated with industry trends to deliver high-quality data solutions.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <p>25</p>
+                        <span>Data Engineering Projects</span>
+                    </div>
+                    <div class="stat">
+                        <p>50</p>
+                        <span>Total Projects</span>
+                    </div>
+                    <div class="stat">
+                        <p>10</p>
+                        <span>Certifications</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <span>SQL 90%</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Python 85%</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Data Visualization 80%</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Database Management 75%</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>ETL Processes 70%</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <h1>Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - Present</div>
+                    <div class="timeline-content">
+                        <h2>Company A</h2>
+                        <p>Senior Data Engineer</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h2>Company B</h2>
+                        <p>Data Engineer</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2018</div>
+                    <div class="timeline-content">
+                        <h2>Company C</h2>
+                        <p>Junior Data Engineer</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">03-2022 - 03-2024</div>
+                    <div class="timeline-content">
+                        <h2>O2LinkX</h2>
+                        <p>Business Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Me</h3>
+                <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put
+                    into improving your skills.</p>
+                <p>Copyright ©2024 All rights reserved</p>
+            </div>
+            <div class="footer-column">
+                <h3>Let's Connect</h3>
+                <p>Stay updated </p>
+                <form action="#">
+                    <input type="email" placeholder="Enter email address" required>
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Me</h3>
+                <p>Let us be social</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
 </html>
