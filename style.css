@@ -348,6 +348,9 @@ footer {
 }
 
 @media (max-width: 992px) {
+    nav {
+        display: none; /* Hides the navigation bar */
+    }
     .hero .container {
         flex-direction: column;
         text-align: center;
@@ -370,7 +373,7 @@ footer {
 
     .about-text, .skills {
         width: 100%;
-        margin-left: 10px;
+        margin-left:0px;
     }
 
     .skills {
@@ -378,23 +381,23 @@ footer {
     }
 
     .timeline {
-        margin-left: 0;
-        width: 80%;
+        margin-left:220px;
+        width: 100%;
         border-left: none;
         padding-left: 0;
     }
 
     .timeline-item {
         padding-left: 0;
-        margin-left: 120px;
+        margin-left: 20px;
     }
 
     .timeline-item::before {
-        left: -30px;
+        margin-left: -30px;
     }
 
     .timeline-date {
-        left: -140px;
+        margin-left: -100px;
     }
 }
 
