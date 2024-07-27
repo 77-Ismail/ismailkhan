@@ -364,12 +364,12 @@ footer {
 
     .about-content {
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
     .about-text, .skills {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 300px;
     }
 
     .skills {
