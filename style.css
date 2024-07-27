@@ -334,3 +334,135 @@ footer {
     color: red;
 }
 
+/* Media Queries */
+@media (max-width: 1200px) {
+    .timeline {
+        margin-left: 400px; /* Adjust based on screen size */
+        width: 60%;
+    }
+
+    .hero .profile img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .profile {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero .intro {
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .about-text, .skills {
+        width: 100%;
+        margin-left: -300px;
+    }
+
+    .skills {
+        margin-top: 20px;
+    }
+
+    .timeline {
+        margin-left: 0;
+        width: 80%;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        padding-left: 0;
+        margin-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -30px;
+    }
+
+    .timeline-date {
+        left: -140px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero .profile img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-section {
+        padding: 20px 20px;
+    }
+
+    .timeline {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .timeline-date {
+        left: -100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero .intro h1 {
+        font-size: 2em;
+    }
+
+    .hero .intro h2 {
+        font-size: 1.2em;
+    }
+
+    .about-text h1 {
+        font-size: 2em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .timeline-item {
+        margin-left: 0;
+    }
+
+    .timeline-date {
+        left: -80px;
+        font-size: 0.9em;
+    }
+}
