@@ -364,12 +364,12 @@ footer {
 
     .about-content {
         flex-direction: column;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .about-text, .skills {
         width: 100%;
-        margin-left: 300px;
+        margin-left: 10px;
     }
 
     .skills {
@@ -385,7 +385,7 @@ footer {
 
     .timeline-item {
         padding-left: 0;
-        margin-left: 20px;
+        margin-left: 120px;
     }
 
     .timeline-item::before {
