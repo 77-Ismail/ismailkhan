@@ -364,7 +364,8 @@ footer {
 
     .about-content {
         flex-direction: column;
-        margin-left: 0px;
+        align-items: left;
+        margin-left:0px;
     }
 
     .about-text, .skills {
